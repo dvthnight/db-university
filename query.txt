@@ -39,6 +39,6 @@ FROM `departments`;
 
 -- esercizio 8
 
-SELECT * 
+SELECT COUNT(*) AS `insegnanti_senza_telefono`
 FROM `teachers`
 WHERE `phone`IS NULL;
