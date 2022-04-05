@@ -14,3 +14,9 @@ WHERE `cfu` > 10;
 SELECT * 
 FROM `students`
 WHERE YEAR(CURRENT_DATE())-YEAR(`date_of_birth`) >= 30;
+
+-- esercizo 4
+SELECT * 
+FROM `courses`
+WHERE `year` = 1
+AND `period` LIKE '_ %';
