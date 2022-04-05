@@ -32,3 +32,8 @@ AND `hour` > '14:00:00';
 SELECT * 
 FROM `degrees`
 WHERE `level`= 'magistrale';
+
+-- esercizio 7
+SELECT COUNT(*) 
+FROM `departments`;
+
