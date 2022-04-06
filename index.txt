@@ -65,7 +65,14 @@ ORDER BY `students`.`surname`,`students`.`name`;
 
 esercizio 5
 
-
+SELECT `degrees`.`name` AS `corso_di_laurea`, `courses`.`name` AS `esame`, `teachers`.`name` AS `nome_insegnante` , `teachers`.`surname` AS `cognome_insegnante`
+FROM `degrees`
+INNER JOIN `courses`
+ON `courses`.`degree_id`=`degrees`.`id`
+INNER JOIN `course_teacher`
+ON `course_teacher`.`course_id`=`courses`.`id`
+INNER JOIN `teachers`
+ON `teachers`.`id`=`course_teacher`.`teacher_id`;
 
 esercizio 6
 
