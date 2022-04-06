@@ -45,7 +45,13 @@ WHERE `departments`.`name` = 'Dipartimento di Neuroscienze';
 
 esercizio 3
 
-
+SELECT * 
+FROM `teachers`
+INNER JOIN `course_teacher`
+ON `course_teacher`.`teacher_id`=`teachers`.`id`
+INNER JOIN `courses`
+ON `courses`.`id` = `course_teacher`.`course_id`
+WHERE `teachers`.`name` = 'Fulvio' AND `teachers`.`surname` = 'Amato';
 
 eserczio 4
 
