@@ -37,7 +37,11 @@ WHERE `degrees`.`name` = 'Corso di Laurea in Economia';
 
 esercizio 2
 
-
+SELECT * 
+FROM `departments`
+INNER JOIN `degrees`
+ON `degrees`.`department_id` = `departments`.`id`
+WHERE `departments`.`name` = 'Dipartimento di Neuroscienze';
 
 esercizio 3
 
