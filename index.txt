@@ -29,7 +29,11 @@ JOIN
 
 eserczio 1
 
-
+SELECT `degrees`.`name` AS `corso_di_laurea`, `students`.`name`,`students`.`surname` 
+FROM `degrees`
+INNER JOIN `students`
+ON `students`.`degree_id`= `degrees`.`id`
+WHERE `degrees`.`name` = 'Corso di Laurea in Economia';
 
 esercizio 2
 
