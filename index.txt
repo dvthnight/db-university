@@ -21,7 +21,9 @@ GROUP BY `exam_id`;
 
 esercizio 4
 
-
+SELECT COUNT(*) AS `numero_classi_laurea`, `department_id` AS `dipartimento`
+FROM `degrees`
+GROUP BY `department_id`;
 
 JOIN
 
