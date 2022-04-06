@@ -15,7 +15,9 @@ GROUP BY `office_address`;
 
 esercizio 3
 
-
+SELECT AVG(`vote`) AS `media_voti`, `exam_id` AS `appello` 
+FROM `exam_student`
+GROUP BY `exam_id`;
 
 esercizio 4
 
