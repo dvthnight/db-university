@@ -9,7 +9,9 @@ GROUP BY YEAR(`enrolment_date`);
 
 esercizio 2
 
-
+SELECT COUNT(*), `office_address` 
+FROM `teachers`
+GROUP BY `office_address`;
 
 esercizio 3
 
