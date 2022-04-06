@@ -1,0 +1,51 @@
+GROUP BY
+
+esercizio 1
+
+SELECT COUNT(*),YEAR(`enrolment_date`) AS `anno_iscrizione`
+FROM `students`
+GROUP BY YEAR(`enrolment_date`);
+
+
+esercizio 2
+
+
+
+esercizio 3
+
+
+
+esercizio 4
+
+
+
+JOIN
+
+eserczio 1
+
+
+
+esercizio 2
+
+
+
+esercizio 3
+
+
+
+eserczio 4
+
+
+
+esercizio 5
+
+
+
+esercizio 6
+
+
+
+esercizio 7
+
+
+
