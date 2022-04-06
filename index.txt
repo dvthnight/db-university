@@ -76,7 +76,17 @@ ON `teachers`.`id`=`course_teacher`.`teacher_id`;
 
 esercizio 6
 
-
+SELECT `departments`.`name` AS `nome_dipartimento`, `teachers`.`name` AS `nome_insegnante` , `teachers`.`surname` AS `cognome_insegnante`
+FROM `departments`
+INNER JOIN `degrees`
+ON `degrees`.`department_id` = `departments`.`id`
+INNER JOIN `courses`
+ON `courses`.`degree_id` = `degrees`.`id`
+INNER JOIN `course_teacher`
+ON `course_teacher`.`course_id`=`courses`.`id`
+INNER JOIN `teachers`
+ON `teachers`.`id` = `course_teacher`.`teacher_id`
+WHERE `departments`.`name`='Dipartimento di Matematica';
 
 esercizio 7
 
